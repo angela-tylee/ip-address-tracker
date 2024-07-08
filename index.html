@@ -9,35 +9,37 @@
 </head>
 <body>
   <div class="background">
-    <div class="container">
-      <h1>IP Address Tracker</h1>
-      <div class="input-container">
-        <input type="text" placeholder="Search for any IP address or domain">
-        <button></button>
-      </div>
-      <div class="result">
-        <div class="ip-address">
-          <h2>IP Address</h2>
-          <p>192.168.127.12</p>
+    <div class="container wrapper">
+        <h1>IP Address Tracker</h1>
+        <div class="input-container">
+          <input type="text" placeholder="Search for any IP address or domain">
+          <button>go</button>
         </div>
-        <div class="location">
-          <h2>Location</h2>
-          <p>New York, United States</p>
+        <div class="result">
+          <div class="ip-address">
+            <h2>IP Address</h2>
+            <p>192.168.127.12</p>
+          </div>
+          <div class="location">
+            <h2>Location</h2>
+            <p>New York, United States</p>
+          </div>
+          <div class="timezone">
+            <h2>Timezone</h2>
+            <p>UTC <span>-5</span></p> <!-- add offset value dynamically using the API -->
+          </div>
+          <div class="isp">
+            <h2>ISP</h2>
+            <p>Google LLC</p>
+          </div>
         </div>
-        <div class="timezone">
-          <h2>Timezone</h2>
-          <p>UTC <span>-5</span></p> <!-- add offset value dynamically using the API -->
-        </div>
-        <div class="isp">
-          <h2>ISP</h2>
-          <p>Google LLC</p>
-        </div>
-      </div>
     
-      <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">Your Name Here</a>.
-      </div>
+      <footer>
+        <div class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+          Coded by <a href="#">Your Name Here</a>.
+        </div>
+      </footer>
     </div>
   </div>
 </body>

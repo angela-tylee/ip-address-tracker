@@ -2,6 +2,11 @@ html, body {
   height: 100%;
 }
 
+body, h1, h2, p, input, button {
+  margin: 0;
+  padding: 0;
+}
+
 .background {
   width: 100%;
   min-height: 100vh;
@@ -36,7 +41,48 @@ html, body {
   align-items: center;
 }
 
+/* .wrapper {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+} */
+
+.input-container {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  width: 60%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.input-container input,
+.input-container button {
+  height: 100%;
+  padding: 2em;
+  border: 0;
+}
+
+.input-container input {
+  width: 90%;
+  box-sizing: border-box;
+}
+
+
+.input-container button {
+  width: 10%;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .result {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  padding: 1em;
+  margin-top: 2em;
+  background-color: white;
+  border-radius: 10px;
 }
