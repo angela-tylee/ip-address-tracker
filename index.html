@@ -3,32 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | IP Address Tracker</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  IP Address Tracker
-
-  Search for any IP address or domain
-
-  IP Address
-  Location
-  Timezone
-    UTC <!-- add offset value dynamically using the API -->
-  ISP
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="background">
+    <div class="container">
+      <h1>IP Address Tracker</h1>
+      <div class="input-container">
+        <input type="text" placeholder="Search for any IP address or domain">
+        <button></button>
+      </div>
+      <div class="result">
+        <div class="ip-address">
+          <h2>IP Address</h2>
+          <p>192.168.127.12</p>
+        </div>
+        <div class="location">
+          <h2>Location</h2>
+          <p>New York, United States</p>
+        </div>
+        <div class="timezone">
+          <h2>Timezone</h2>
+          <p>UTC <span>-5</span></p> <!-- add offset value dynamically using the API -->
+        </div>
+        <div class="isp">
+          <h2>ISP</h2>
+          <p>Google LLC</p>
+        </div>
+      </div>
+    
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Your Name Here</a>.
+      </div>
+    </div>
   </div>
 </body>
 </html>
